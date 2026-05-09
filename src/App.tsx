@@ -47,7 +47,7 @@ export default function App() {
       title: "باقة VIP الملكية",
       prices: { salon: 20, jeep: 25 },
       features: ["عناية تفصيلية شاملة", "إزالة بقع مستعصية", "تلميع الرنجات الفائق", "تلميع الديكورات بمواد حماية", "تعطير ملكي يدوم طويلاً"],
-      color: "bg-blue-50",
+      color: "bg-red-50",
       badge: "الرفاهية",
       image: "/c4.png"
     }
@@ -69,25 +69,25 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen font-sans bg-white selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen font-sans bg-white selection:bg-red-100 selection:text-red-900">
       {/* Dynamic Header */}
       <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
               <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-slate-950 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-slate-200">
-                <Car size={28} className="text-blue-500" />
+                <Car size={28} className="text-red-600" />
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-black text-slate-900 leading-none tracking-tight">CAR CARE</span>
-                <span className="text-[9px] font-extrabold text-blue-600 tracking-[0.2em] uppercase">Premium Detailing</span>
+                <span className="text-[9px] font-extrabold text-red-600 tracking-[0.2em] uppercase">Premium Detailing</span>
               </div>
             </div>
             
             <div className="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600">
-              <a href="#services" className="hover:text-blue-600 transition-colors uppercase">الخدمات</a>
-              <a href="#offers" className="hover:text-blue-600 transition-colors uppercase">العروض</a>
-              <a href="tel:66113328" className="px-6 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-blue-600 transition-all flex items-center gap-2">
+              <a href="#services" className="hover:text-red-600 transition-colors uppercase">الخدمات</a>
+              <a href="#offers" className="hover:text-red-600 transition-colors uppercase">العروض</a>
+              <a href="tel:66113328" className="px-6 py-2.5 bg-slate-950 text-white rounded-xl hover:bg-red-600 transition-all flex items-center gap-2">
                 <Phone size={16} />
                 66113328
               </a>
@@ -117,7 +117,7 @@ export default function App() {
                 <a href="tel:66113328" className="flex-1 bg-green-500 text-white p-4 rounded-2xl flex items-center justify-center gap-2 font-bold shadow-lg shadow-green-100">
                   <Phone size={20} /> اتصل الآن
                 </a>
-                <a href="https://wa.me/96566113328" className="flex-1 bg-blue-600 text-white p-4 rounded-2xl flex items-center justify-center gap-2 font-bold shadow-lg shadow-blue-100">
+                <a href="https://wa.me/96566113328" className="flex-1 bg-red-600 text-white p-4 rounded-2xl flex items-center justify-center gap-2 font-bold shadow-lg shadow-red-100">
                   <MessageCircle size={20} /> واتساب
                 </a>
               </div>
@@ -128,7 +128,7 @@ export default function App() {
 
       {/* Hero Section - Kuwait Atmosphere */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-50 via-white to-white z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-red-50 via-white to-white z-0" />
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -136,20 +136,20 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/10 text-blue-700 rounded-full mb-8 text-sm font-black border border-blue-600/10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-600/10 text-red-700 rounded-full mb-8 text-sm font-black border border-red-600/10">
                 <MapPin size={16} />
                 <span>خدمة متنقلة - نصلك أينما كنت في الكويت</span>
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-8xl font-black text-slate-950 mb-6 leading-[1.2] md:leading-[1.1] tracking-tight">
                 سيارتك تستحق <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">عناية الخبراء.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">عناية الخبراء.</span>
               </h1>
               <p className="text-lg md:text-2xl text-slate-500 mb-10 max-w-xl leading-relaxed font-medium">
                 نعيد لسيارتك بريق الوكالة بأيدي فنيين متخصصين ومواد عالمية فائقة الجودة. نصل إليك أينما كنت في الكويت لنمنح سيارتك الرفاهية التي تستحقها.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-5">
-                <a href="tel:66113328" className="px-10 py-5 bg-slate-950 text-white rounded-2xl font-black text-xl flex items-center justify-center gap-4 hover:bg-blue-600 transition-all shadow-2xl shadow-slate-200">
+                <a href="tel:66113328" className="px-10 py-5 bg-slate-950 text-white rounded-2xl font-black text-xl flex items-center justify-center gap-4 hover:bg-red-600 transition-all shadow-2xl shadow-slate-200">
                   احجز موعدك <Phone />
                 </a>
                 <div className="flex items-center gap-4 px-6 md:border-r border-slate-200">
@@ -191,8 +191,8 @@ export default function App() {
                 </div>
               </div>
               {/* Decorative blobs */}
-              <div className="absolute -top-12 -right-12 w-64 h-64 bg-blue-400 blur-[100px] rounded-full opacity-20 -z-10 animate-pulse" />
-              <div className="absolute -bottom-12 -left-12 w-80 h-80 bg-indigo-400 blur-[120px] rounded-full opacity-25 -z-10" />
+              <div className="absolute -top-12 -right-12 w-64 h-64 bg-red-400 blur-[100px] rounded-full opacity-20 -z-10 animate-pulse" />
+              <div className="absolute -bottom-12 -left-12 w-80 h-80 bg-red-800 blur-[120px] rounded-full opacity-25 -z-10" />
             </motion.div>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div>
-              <span className="text-blue-600 font-black text-xs uppercase tracking-[0.3em] mb-4 block">Our Services</span>
+              <span className="text-red-600 font-black text-xs uppercase tracking-[0.3em] mb-4 block">Our Services</span>
               <h2 className="text-4xl md:text-6xl font-black text-slate-950 italic uppercase tracking-tighter">
                 باقات العناية المختارة
               </h2>
@@ -228,7 +228,7 @@ export default function App() {
                 <div className="relative h-48 overflow-hidden">
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" />
                   <div className="absolute top-6 left-6">
-                     <span className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest ${service.recommended ? 'bg-blue-600 text-white' : 'bg-white text-slate-900'}`}>
+                     <span className={`px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest ${service.recommended ? 'bg-red-600 text-white' : 'bg-white text-slate-900'}`}>
                        {service.badge}
                      </span>
                   </div>
@@ -251,7 +251,7 @@ export default function App() {
                   <ul className="space-y-4 mb-10">
                     {service.features.map((f, i) => (
                       <li key={i} className="flex items-center gap-3 text-sm font-medium">
-                        <CheckCircle2 size={16} className={service.recommended ? "text-blue-400" : "text-blue-600"} />
+                        <CheckCircle2 size={16} className={service.recommended ? "text-red-400" : "text-red-600"} />
                         <span className={service.recommended ? "text-slate-300" : "text-slate-600"}>{f}</span>
                       </li>
                     ))}
@@ -259,8 +259,8 @@ export default function App() {
 
                   <a href="tel:66113328" className={`w-full py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 transition-all ${
                     service.recommended 
-                      ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-xl shadow-blue-900/40' 
-                      : 'bg-slate-900 text-white hover:bg-blue-600 shadow-xl shadow-slate-100'
+                      ? 'bg-red-600 text-white hover:bg-red-700 shadow-xl shadow-red-900/40' 
+                      : 'bg-slate-900 text-white hover:bg-red-600 shadow-xl shadow-slate-100'
                   }`}>
                     اطلب الآن <Phone size={18} />
                   </a>
@@ -307,14 +307,14 @@ export default function App() {
       <section id="offers" className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-slate-950 z-0" />
         <div className="max-w-7xl mx-auto px-4 relative z-10 text-white">
-          <div className="bg-gradient-to-br from-blue-700/20 to-transparent border border-white/10 rounded-[3rem] p-8 md:p-16">
+          <div className="bg-gradient-to-br from-red-700/20 to-transparent border border-white/10 rounded-[3rem] p-8 md:p-16">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
                <div>
                   <span className="px-5 py-2 bg-amber-500 text-slate-950 text-xs font-black rounded-full mb-8 inline-block uppercase tracking-widest">
                     Monthly Membership
                   </span>
                   <h2 className="text-5xl md:text-7xl font-black mb-8 italic uppercase leading-[1.1]">
-                    اشترك الآن <br /> <span className="text-blue-500">ووفّر الكثير!</span>
+                    اشترك الآن <br /> <span className="text-red-500">ووفّر الكثير!</span>
                   </h2>
                   <div className="space-y-6 mb-12">
                      {[
@@ -324,7 +324,7 @@ export default function App() {
                        "أولوية مطلقة في المواعيد والحجز"
                      ].map((item, i) => (
                        <div key={i} className="flex items-center gap-4 text-xl font-medium text-slate-300">
-                         <div className="w-8 h-8 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400">
+                         <div className="w-8 h-8 rounded-full bg-red-600/20 flex items-center justify-center text-red-500">
                            <CheckCircle2 size={20} />
                          </div>
                          {item}
@@ -346,7 +346,7 @@ export default function App() {
                        </div>
                     </div>
                   ))}
-                  <a href="tel:66113328" className="w-full py-6 mt-8 bg-blue-600 text-white rounded-2xl flex items-center justify-center gap-3 text-2xl font-black shadow-2xl shadow-blue-500/20 hover:bg-blue-700 transition-all">
+                  <a href="tel:66113328" className="w-full py-6 mt-8 bg-red-600 text-white rounded-2xl flex items-center justify-center gap-3 text-2xl font-black shadow-2xl shadow-red-500/20 hover:bg-red-700 transition-all">
                     اشترك الآن <Zap fill="white" />
                   </a>
                </div>
@@ -362,11 +362,11 @@ export default function App() {
             <div className="col-span-1 md:col-span-2 text-right">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-14 h-14 bg-slate-950 rounded-2xl flex items-center justify-center text-white shadow-xl shadow-slate-100">
-                  <Car size={32} className="text-blue-500" />
+                  <Car size={32} className="text-red-600" />
                 </div>
                 <div className="flex flex-col text-right">
                   <span className="text-2xl font-black text-slate-950 uppercase leading-none tracking-tight">CAR CARE</span>
-                  <span className="text-xs font-extrabold text-blue-600 tracking-[0.2em] uppercase">Premium Detailing</span>
+                  <span className="text-xs font-extrabold text-red-600 tracking-[0.2em] uppercase">Premium Detailing</span>
                 </div>
               </div>
               <p className="text-slate-500 text-lg max-w-md font-medium leading-relaxed">
@@ -379,7 +379,7 @@ export default function App() {
               <ul className="space-y-6">
                 <li>
                   <a href="tel:66113328" className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-500 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-500 group-hover:bg-red-600 group-hover:text-white transition-all">
                       <Phone size={20} />
                     </div>
                     <span className="font-black text-lg text-slate-950">66113328</span>
@@ -387,7 +387,7 @@ export default function App() {
                 </li>
                 <li>
                   <a href="https://instagram.com/carcarekw" className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-500 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-slate-500 group-hover:bg-red-600 group-hover:text-white transition-all">
                       <Instagram size={20} />
                     </div>
                     <span className="font-bold text-slate-600">@carcarekw</span>
@@ -407,10 +407,10 @@ export default function App() {
             <div>
                <h4 className="text-slate-900 font-black text-sm uppercase tracking-[0.2em] mb-8">باقاتنا</h4>
                <ul className="space-y-4 text-slate-500 font-bold">
-                 <li><a href="#services" className="hover:text-blue-600">الغسيل العادي</a></li>
-                 <li><a href="#services" className="hover:text-blue-600">تنظيف باقة Gold</a></li>
-                 <li><a href="#services" className="hover:text-blue-600">العناية الملكية VIP</a></li>
-                 <li><a href="#offers" className="hover:text-blue-600">الاشتراكات الشهرية</a></li>
+                 <li><a href="#services" className="hover:text-red-600">الغسيل العادي</a></li>
+                 <li><a href="#services" className="hover:text-red-600">تنظيف باقة Gold</a></li>
+                 <li><a href="#services" className="hover:text-red-600">العناية الملكية VIP</a></li>
+                 <li><a href="#offers" className="hover:text-red-600">الاشتراكات الشهرية</a></li>
                </ul>
             </div>
           </div>
