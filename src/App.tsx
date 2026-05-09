@@ -40,10 +40,16 @@ export default function App() {
     {
       title: "غسيل VIP",
       prices: { salon: 20, jeep: 25 },
-      features: ["غسيل خارجي", "تنظيف داخلي", "تنظيف الإطارات والرنجات", "إزالة بقع الأرضيات والكشنات", "تعطير السيارة", "تلميع إضافي"],
+      features: ["غسيل خارجي", "تنظيف داخلي", "تنظيف الإطارات والرنجات", "إزالة بقع الأرضيات والكشنات", "تعطير السيارة", "تلميع إضافي يدوم طويلاً"],
       color: "bg-blue-50",
       badge: "بريميوم"
     }
+  ];
+
+  const whyChooseUs = [
+    { title: "دقة في المواعيد", desc: "نلتزم بالحضور في الموعد المحدد لضمان راحتكم.", icon: <Clock className="text-blue-600" /> },
+    { title: "مواد بريميوم", desc: "نستخدم أفضل أنواع الشامبو والواكس العالمي لحماية صبغة سيارتك.", icon: <Star className="text-amber-500" /> },
+    { title: "فريق محترف", desc: "عمالة مدربة على أعلى مستوى في فنون العناية بالسيارات.", icon: <CheckCircle2 className="text-green-600" /> },
   ];
 
   const offers = [
@@ -335,6 +341,30 @@ export default function App() {
                 اشترك الآن
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid md:grid-cols-3 gap-8">
+            {whyChooseUs.map((item, idx) => (
+              <motion.div 
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow text-center"
+              >
+                <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
