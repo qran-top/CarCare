@@ -34,18 +34,10 @@ jobs:
       - name: Build
         run: |
           npm install
-          mkdir -p public
-          # Check if CNAME exists in root (if user added it manually)
-          if [ -f "CNAME" ]; then
-            cp CNAME public/
-          fi
           npm run build
-          # Ensure dist and index.html exist
-          if [ ! -f "dist/index.html" ]; then
-            echo "Error: Build failed to produce index.html"
-            ls -R
-            exit 1
-          fi
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
